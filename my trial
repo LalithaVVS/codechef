@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define tc() int t; cin>>t; while(t--)
+#define loop(i,a,b) for(int i=a;i<b;i++)
+
+int main() {
+    int count=0;
+	tc(){
+	    string s;
+	    cin>>s;
+	    int a=s.size();
+	    loop(i,0,a-1){
+	        if(((s[i]+s[i+1])=='ch')||((s[i]+s[i+1])=='he')||((s[i]+s[i+1])=='ef')){
+	            count++;
+	            break;
+	        }
+	    }
+	}
+	cout<<count<<'\n';
+	return 0;
+}
